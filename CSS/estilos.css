@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Baloo Bhai', cursive;
+    color: #A71F61;
+    letter-spacing: 1.5px;
+}
+
+/* Header */
+
+.header {
+    height: 65px;
+    background: #011E31;;
+}
+
+.header h1 {
+    margin: 10px auto 10px 10px;
+}
+
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+/* Menú */
+
+.nav {
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_link    {
+    display: block;
+    padding: 20px;
+    background: #011E31;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu_link:hover    {
+    background: #A71F61;
+}
+
+.mostrar {
+    left: 0;
+}
+
+.icon-menu    {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #A71F61;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin: 10px 10px 10px auto;
+    cursor: pointer;
+}
+
+header nav {
+    background: #011E31;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 0 20px auto;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li:hover {
+    background: #A71F61;
+}
+
+header nav ul li:hover .submenu-desplegables {
+    display: block;
+}
+
+header nav ul li .submenu-desplegables {
+    display: none;
+    background: #011E31;
+    position: absolute;
+    width: 250%;
+    z-index: 1000;
+}
+
+header nav ul li .submenu-desplegables li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+header nav ul li .submenu-desplegables li a {
+    display: block;
+}
+
+header nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+/* */
+
+.titulo-seccion {
+    text-align: center;
+}
+
+.sectioncursossurf  {
+    padding-top: 30px;
+    margin: auto;
+    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.sectioncursosbodyboard  {
+    padding-top: 30px;
+    margin: auto;
+    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.cajacursos{
+	color: black;
+	margin-bottom: 10px;
+	width: 200px;
+    height: 200px;
+	margin: 25px;
+	text-align: center;
+	background-color: white;
+}
+
+.cajacursos:hover {
+	color: black;
+	margin-bottom: 10px;
+	width: 300px;
+    height: 300px;
+	margin: 25px;
+	text-align: center;
+	background-color: #A71F61;
+}
+
+.cursosTitulo{
+    color: white;
+    background: #011E31;
+    padding-top: 15px;
+    height: 50px;
+    font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.cursos .caja_cursos    {
+	width: 100%;
+	margin: auto;
+
+}
+
+.datos {
+    padding: 25px;
+}
+
+
+/**/
+
+.titulo {
+    background: white;
+    color: #A71F61;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.titulo-cursos {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* alumnos */
+
+.alumnos_izq {
+    background: yellow;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    position: absolute;
+    color: green;
+    left: 30%;
+}
+
+.alumnos_der {
+    background: yellow;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    position: absolute;
+    color: green;
+    right: 30%;
+}
+
+.alumnos_izq ul li {
+    list-style: none;
+}
+
+.alumnos {
+    display: none;
+}
+
+/* Responsive  */
+
+@media screen and (max-width: 768px){
+    body {
+        padding-top: 0;
+    }
+
+    header nav {
+        width: 100%;
+        height: calc(100% - 80px);
+        position: fixed;
+        left: 0;
+        margin: 0;
+        overflow: scroll;
+    }
+    
+    header nav ul li {
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    
+    header nav ul li a {
+        display: block;
+    }
+    
+    header nav ul li .submenu-desplegables {
+        width: 100%;
+        position: relative;
+
+    }
+    
+        header nav ul li .submenu-desplegables a {
+        width: 100%;
+        position: relative;
+        background: white;
+        color: #A71F61;
+    }
+    
+    header nav ul li .submenu-desplegables a:hover {
+        width: 100%;
+        position: relative;
+        background: #A71F61;
+        color: white;
+    }
+}
+
+@media (min-width:1024px){
+    .nav {
+        position: static;
+        display: flex;
+        justify-content: center;
+      }
+    .icon-menu {
+        display: none;
+    }
+
+    .select {
+        background: #A71F61;
+        color: #fff;
+    }
+    .logo {
+        width: 20%;
+
+    }
+     
+}
+

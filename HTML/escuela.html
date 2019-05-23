@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Escuela | Mundaka Surf</title>
+    <!-- meta:vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <script src="../JS/jquery-3.4.1.min.js"></script>
+    <script src="../JS/alumnos.js"></script>
+        
+</head>
+<body>
+   <header class="header">
+      <div class="contenedor">
+            <h1 class="logo">Mudanka Surf</h1>
+            <span class="icon-menu" id="btn-menu">&#9776;</span>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+               <li><a href="../index.html">Inicio</a></li>
+               <li><a href="escuela.html">Escuela</a></li>
+               <li class="submenu"><a href="../XML/surf.xml">Cursos &#8628;</a>
+                  <ul class="submenu-desplegables">
+                      <li><a href="">Iniciación</a></li>
+                      <li><a href="">Nivel medio</a></li>
+                      <li><a href="">Nivel avanzado</a></li>
+                  </ul>
+                </li>
+                   
+               <li><a href="">Contacto</a></li>
+           </ul>
+       </nav>
+       </div>
+   </header>
+   <section>
+       <div class="contenedor">
+           <h1 class="titulo-cursos">INTERCAMBIADOR DE ELEMENTOS</h1>
+           <div class="titulo-cursos">
+               <table width=30% border="0">
+            <tr>
+                <td>Ver DIVs&nbsp;&nbsp;<input type="radio" onclick="divs(0)" name="divs" value="alumnos" id="siDiv"></td>
+                <td>No ver DIVs&nbsp;&nbsp;<input type="radio" onclick="divs(1)" name="divs" value="alumnos" id="noDiv"></td>
+            </tr>
+        </table>
+           </div>
+           <div id="alumnos">
+           <div class="alumnos_izq">
+           
+           <ul>
+               <li>Aguado Pérez, Xavi</li>
+               <li>Álvarez Rodríguez, Juan</li>
+               <li>Álvarez Rodríguez, Juan</li>
+               <li>Delgado Martínez, Mari</li>
+               <li>Fernández Fernández, Petra</li>
+               <li>Hernández Pérez, Julia</li>
+               <li>Hernández Pérez, Julia</li>
+               <li>Jiménez Ochoa, Raúl</li>
+               <li>Jiménez Zato, Jose</li>
+               <li>Rodríguez Fernández, Alberto</li>
+               <li>Simeone, Dieg</li>
+          </ul>
+       </div>
+       <div class="alumnos_der">
+           
+       </div>
+       </div>
+       </div>
+   </section>
+   
+    <script src="JS/menu.js"></script>
+</body>
+</html>
