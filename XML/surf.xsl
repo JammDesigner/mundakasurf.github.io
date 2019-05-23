@@ -66,6 +66,7 @@
     
      </div>
     </body>
+	<script src="JS/menu.js"></script>
   </html>
 </xsl:template>
 </xsl:stylesheet>
