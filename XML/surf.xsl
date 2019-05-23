@@ -16,7 +16,7 @@
             <nav class="nav" id="nav">
                 <ul class="menu">
                <li><a href="../index.html">Inicio</a></li>
-               <li><a href="HTML/escuela.html">Escuela</a></li>
+               <li><a href="../HTML/escuela.html">Escuela</a></li>
                <li class="submenu"><a href="surf.xml">Cursos &#8628;</a>
                   <ul class="submenu-desplegables">
                       <li><a href="">Iniciación</a></li>
@@ -32,21 +32,7 @@
    </header>
 
 <div class="sectioncursossurf">
-   <!--
-    <xsl:for-each select="cursos/curso">
-     
-      <div class="cajacursos">       
-        <p class="cursosTitulo"><xsl:value-of select="precio"/>€ /Persona</p>
-        <p class="datos"><xsl:value-of select="dias"/> días</p>
-        <p class="datos"><xsl:value-of 
-        select="horas"/> horas de duración</p>
-        <p class="datos">Material <xsl:value-of 
-        select="material"/> </p>
-      </div>
-
-    </xsl:for-each>
-    -->
-    
+   
   <div class="titulo-cursos"><h2>SURF</h2></div>
 				<xsl:for-each select="//curso[nombre='Surf']">
                       
@@ -64,21 +50,7 @@
      </div>
      
      <div class="sectioncursosbodyboard">
-   <!--
-    <xsl:for-each select="cursos/curso">
-     
-      <div class="cajacursos">       
-        <p class="cursosTitulo"><xsl:value-of select="precio"/>€ /Persona</p>
-        <p class="datos"><xsl:value-of select="dias"/> días</p>
-        <p class="datos"><xsl:value-of 
-        select="horas"/> horas de duración</p>
-        <p class="datos">Material <xsl:value-of 
-        select="material"/> </p>
-      </div>
-
-    </xsl:for-each>
-    -->
-    
+   
   <div class="titulo-cursos"><h2>BODYBOARD</h2></div>
 	<xsl:for-each select="//curso[nombre='Bodyboard']">
       <div class="cajacursos">       
